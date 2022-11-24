@@ -1,0 +1,38 @@
+{
+  // "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": ["ES2017", "esnext.asynciterable"],
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "baseUrl": "src",
+    "paths": {
+      "@app/*": ["*"],
+      "@config/*": ["config/*"],
+      "@libs/*": ["libs/*"],
+      "@constants/*": ["constants/*"],
+      "@databases/*": ["databases/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@utils/*": ["utils/*"],
+      "@modules/*": ["modules/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.json", ".env", "src/database/database.config.ts"],
+  "exclude": ["node_modules", "src/http", "src/logs", "src/tests"]
+}

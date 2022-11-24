@@ -1,0 +1,17 @@
+{
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+    "typescript.format.semicolons": true,
+    "javascript.format.semicolons": true
+  },
+  "editor.formatOnSave": false,
+  "cSpell.words": [
+    "commitlint",
+    "dtos",
+    "logform",
+    "middlewares",
+    "tsyringe"
+  ]
+}
