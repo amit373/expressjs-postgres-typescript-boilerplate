@@ -19,7 +19,9 @@
     "migration:generate": "npx sequelize-cli model:generate",
     "migration:create": "npx sequelize-cli migration:create --name",
     "migration:undo": "npx sequelize-cli db:migrate:undo --name",
-    "migration:undo:all": "npx sequelize-cli db:migrate:undo:all"
+    "migration:undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "prepare": "husky install && chmod ug+x .husky/*",
+    "prebuild": "rimraf dist"
   },
   "keywords": [],
   "author": "",
@@ -85,6 +87,7 @@
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.8.0",
     "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
     "sequelize": "^6.25.5",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.6.0",

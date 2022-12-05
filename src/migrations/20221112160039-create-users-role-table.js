@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 'use strict';
 
 /** @type {import('sequelize-cli').Migration} */

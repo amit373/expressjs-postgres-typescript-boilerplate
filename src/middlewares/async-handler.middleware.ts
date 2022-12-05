@@ -2,6 +2,6 @@ import { NextFunction, Request, Response } from 'express';
 
 export const asyncHandler =
   (fn: any) =>
-  (req: Request, res: Response, next: NextFunction): void => {
-    fn(req, res, next).catch(next);
-  };
+    (req: Request, res: Response, next: NextFunction): void => {
+      fn(req, res, next).catch(next);
+    };

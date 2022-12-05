@@ -21,6 +21,7 @@ module.exports = {
     '@typescript-eslint/space-before-function-paren': 0,
     'space-before-function-paren': 0,
     '@typescript-eslint/dot-notation': 0,
-    '@typescript-eslint/explicit-function-return-type': 1
+    '@typescript-eslint/explicit-function-return-type': 1,
+    'comma-dangle': 0
   }
 };

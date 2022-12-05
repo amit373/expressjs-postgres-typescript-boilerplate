@@ -4,11 +4,11 @@ import { logger } from './logger';
 
 type IContext =
   | {
-      controller?: string;
-      method?: string;
-      status?: number;
-      function?: string;
-    }
+    controller?: string;
+    method?: string;
+    status?: number;
+    function?: string;
+  }
   | string;
 
 @injectable()

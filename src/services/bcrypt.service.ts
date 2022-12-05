@@ -21,10 +21,10 @@ export class BcryptService {
     minutes = 10,
     isOtp = false,
   ): {
-    resetToken: string;
-    resetPasswordToken?: string;
-    resetPasswordExpire: Date;
-  } {
+      resetToken: string;
+      resetPasswordToken?: string;
+      resetPasswordExpire: Date;
+    } {
     let resetToken = '';
     // Set expire 10 mins
     const resetPasswordExpire: Date = new Date(Date.now() + minutes * 60 * 1000);

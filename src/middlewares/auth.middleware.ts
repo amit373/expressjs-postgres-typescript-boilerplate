@@ -26,7 +26,7 @@ export const authMiddleware = asyncHandler(async (req: any, _: Response, next: N
 
   // 2) Verification token
   const decoded: any = await jwtService.verifyToken(token);
-  if (!decoded || !decoded.id) {
+  if (!decoded?.id) {
     return next(new UnauthorizedException(i18next.t('ERROR.USER_WITH_TOKEN_NOT_EXIST')));
   }
 
